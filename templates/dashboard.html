@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesAsignadas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesMenu.css') }}">
+</head>
+<body>
+    <h1>Mi Dashboard</h1>
+    
+    <!-- Aquí puedes insertar el gráfico generado por Plotly -->
+    {{ graph_html | safe }}
+</body>

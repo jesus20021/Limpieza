@@ -1,0 +1,108 @@
+/* Reset de estilos para quitar márgenes y rellenos predeterminados */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#nombre {
+    color: #ffd700;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#menu {
+    background-color: #ffd700; /* Amarillo */
+}
+
+#cerrar {
+    background-color: #ff0000; /* Rojo */
+}
+
+h1 {
+    margin-left: auto; /* Mueve el h1 al extremo derecho */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Espacio adicional bajo el h1 */
+}
+
+nav {
+    margin-left: auto; /* Mueve el nav al extremo derecho */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+main-container {
+    display: flex;
+}
+
+.principal{
+    display: flex;
+}
+
+section, main {
+    flex: 1; /* Ambos ocupan el mismo espacio inicialmente */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 2; /* main ocupa el doble de espacio que section */
+}
+
+section h2, main h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para el contenido del main */
+main a {
+    color: #333;
+}
+
+/* Estilos adicionales según tus necesidades */
+#descrpicion {
+    font-style: italic;
+}
+
+#colonia {
+    font-weight: bold;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2ecc71; /* Verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

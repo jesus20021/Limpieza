@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesAsignadas.css') }}">
+</head>
+<body>
+    <header>
+        <a>{{ nombre }}</a>
+        <h1>Actividades Asignadas</h1>
+        <nav>
+            <ul>
+                <li><a id="menu" href="/Menu">Menú</a></li>
+                <li><a id="cerrar" href="/Logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="principal">
+        <section>
+            <h2>Actividades Asignadas</h2>
+            <h3>{{ cuadrilla }}</h3>
+            <ul>
+                {% for actividad in actividades %}
+                <li><a href="javascript:actividad({{ actividad.id }})">{{ actividad.nombre }}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        <main>
+            <form method="post" action="/actualizar", enctype="multipart/form-data">
+                <input type="hidden" name="id" id="id">
+                <h2>Actividad</h2><br><br><br>
+                <a>Nombre: </a>
+                <a id="nombre"></a>
+                <br><br>
+                <a>Descrpición: </a>
+                <a id="descripcion"></a>
+                <br><br>
+                <a>Colonia: </a>
+                <a id="colonia"></a>
+                <br><br>
+                <a>Fecha asignada: </a>
+                <a id="fecha"></a>
+                <br><br>
+                <input type="file" id="file" name="file">
+                <button>Actualizar</button>
+            </form>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/asignadas.js') }}" ></script>
+</body>
+</html>

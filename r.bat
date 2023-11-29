@@ -1,0 +1,1 @@
+flask --app App.py --debug run

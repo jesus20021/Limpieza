@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesAsignadas.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesMenu.css') }}">
+</head>
+<body>
+    <header>
+        <a>{{ nombre }}</a>
+        <h1>Actividades Asignadas</h1>
+        <nav>
+            <ul>
+                <li><a id="cerrar" href="/Logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="principal">
+        <a class="lightgreen" href="/ActividadesAsignadas">Actividades Asignadas</a>
+        <a class="green" href="/ActividadesRealizadas">Actividades Realizadas</a>
+    </div>
+    <script src="{{ url_for('static', filename='js/asignadas.js') }}" ></script>
+</body>
+</html>

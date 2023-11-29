@@ -1,0 +1,39 @@
+/* Estilo para el contenedor principal */
+.principal {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los enlaces "Actividades Asignadas" y "Actividades Realizadas" */
+  .principal a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  /* Estilo para el enlace "Actividades Asignadas" con fondo lightgreen */
+  .lightgreen {
+    background-color: lightgreen;
+  }
+  
+  /* Estilo para el enlace "Actividades Realizadas" con fondo green */
+  .green {
+    background-color: green;
+  }
+
+  .cyan {
+    background-color: cyan;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+  
+  /* Estilo cuando se coloca el cursor sobre los enlaces */
+  .principal a:hover {
+    background-color: darkgreen;
+  }
